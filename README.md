@@ -14,11 +14,19 @@ npm i
 ```
 npm i -g @nest/cli
 ```
-4. levantar la base de datos
+4. Levantar la base de datos
 ```
 docker compose up -d
 ```
-5. Recargar base de datos con la semilla
+5. Clonar el archivo ```.env.template``` y renombrar la copia a ```.env```
+
+6. Llenar las variables de entorno definidas en el ```.env```
+
+7. Ejecutar apliacion en dev:
+```
+npm run start:dev
+```
+8. Recargar base de datos con la semilla
 ```
 http://localhost:3000/api/v2/seed
 ```
